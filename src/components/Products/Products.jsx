@@ -34,7 +34,7 @@ export default function Products() {
 function Elements({recipe}) {
     return(
         <>
-            <div className="col-md-3 col-sm-6 rounded border border-1">
+            <div className="col-md-3 col-sm-6 rounded border border-1 hCard">
                 <div className="item mt-1 h-100">
                     <div className="image d-flex justify-content-center align-items-center p-2">
                         <img src={recipe.image} alt="image-product" className='image w-50' />

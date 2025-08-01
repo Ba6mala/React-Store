@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Navber() {
+export default function Navber({number}) {
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -13,10 +14,14 @@ export default function Navber() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <Link className="nav-link" aria-current="page" to={'/'}>Home</Link>
+                            <Link className="nav-link" aria-current="page" to={'/'}>Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" to={'/products'}>Products</Link>
+                            <Link className="nav-link" to={'/products'}>Products</Link>
+                        </li>
+                        <li className="nav-item position-relative">
+                            <i className="fa-solid fa-cart-shopping text-light"></i>
+                            <span className='text-light text-center count position-absolute'>{number}</span>
                         </li>
                     </ul>
                     </div>

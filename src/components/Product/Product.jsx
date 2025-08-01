@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 
-export default function Product() {
+export default function Product({Increse}) {
     const { id } = useParams();
     let [product, setProduct] = useState(null);
 
@@ -11,7 +11,6 @@ export default function Product() {
         try {
             const { data } = await axios.get(`https://fakestoreapi.com/products/${id}`);
             setProduct(data);
-            console.log(data);
         } catch {
             console.log("Error");
         }
@@ -40,7 +39,7 @@ export default function Product() {
                         <p className="badge bg-secondary mb-3">{product.category}</p>
                         <p className="mb-3">{product.description}</p>
                         <div className="d-flex flex-column gap-3">
-                            <button className="btn btn-success">Add to Cart</button>
+                            <button className="btn btn-success" onClick={ () => Increse(1)}>Add to Cart</button>
                             <Link to="/products" className="btn btn-outline-secondary">Back to Products</Link>
                         </div>
                     </div>

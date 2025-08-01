@@ -70,6 +70,25 @@
   color: gold;
 }
 
+.fa-cart-shopping {
+      width: 33px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #198754;
+    padding-top: 9px;
+    margin-top: 5px;
+}
+
+nav .count {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: brown;
+    top: -1px;
+    left: 19px;
+    font-size: 10px;
+}
+
 /* End Nav  */
 
 /* Start Home  */
@@ -98,6 +117,14 @@
 
 .box-card {
   gap: 20px;
+}
+
+.hCard {
+  transition: 1s;
+}
+
+.hCard:hover {
+  transform: translateY(-15px);
 }
 
 .col-md-3 {
