@@ -80,6 +80,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Screenshots
 
-![App Screenshot](screencapture-localhost-5173-2025-08-01-01_32_03.png)
-![App Screenshot](screencapture-localhost-5173-products-2025-08-01-01_32_33.png)
-![App Screenshot](screencapture-localhost-5173-product-3-2025-08-01-01_32_55.png)
+![App Screenshot](screencapture-localhost-5173-2025-08-01-12_16_33.png)
+![App Screenshot](screencapture-localhost-5173-products-2025-08-01-12_16_47.png)
+![App Screenshot](screencapture-localhost-5173-product-3-2025-08-01-12_17_12.png)
